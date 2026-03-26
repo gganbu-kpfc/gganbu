@@ -1,4 +1,42 @@
-gganbu-homepage/
+## 프로젝트 파일 구조
+
+이 프로젝트는 한 장짜리 랜딩페이지가 아니라,
+메뉴별 페이지가 분리된 공식 홈페이지 구조로 설계한다.
+
+### 주요 페이지
+- index.html : 홈
+- about.html : 회사소개
+- services.html : 서비스소개
+- revenue.html : 수익구조
+- faq.html : FAQ
+- contact.html : 문의하기
+
+### 브랜드 상세 페이지
+- brands/marketing.html
+- brands/ai-solution.html
+- brands/kpfc.html
+- brands/pickcar.html
+
+### MOU 페이지
+- mou/partners.html
+
+### 스타일 파일
+- assets/css/common.css
+- assets/css/main.css
+- assets/css/about.css
+- assets/css/services.css
+- assets/css/revenue.css
+- assets/css/faq.css
+- assets/css/contact.css
+
+### 스크립트 파일
+- assets/js/common.js
+- assets/js/main.js
+- assets/js/faq.js
+- assets/js/contact.js
+-
+-
+- gganbu-homepage/
 ├─ index.html                # 홈
 
 ├─ about.html                # 회사소개
