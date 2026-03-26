@@ -3,3038 +3,563 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>깐부파트너스 | 실행 중심 비즈니스 플랫폼</title>
+  <title>깐부파트너스 | 직접 운영과 검증된 연결로 움직이는 실행형 브랜드 그룹</title>
   <meta
     name="description"
-    content="깐부파트너스는 마케팅 실행, AI 솔루션, 경영컨설팅, 신차 플랫폼, 휴대폰·렌탈·태양광·부업 브랜드를 운영하는 실행 중심 비즈니스 플랫폼입니다."
+    content="깐부파트너스 공식 홈페이지. 깐부마케팅, 깐부AI솔루션, KPFC, PICKCAR를 직접 운영하고, 검증된 협력사와 연결되는 실행형 브랜드 그룹입니다."
   />
-  <style>
-    :root {
-      --navy-950: #071428;
-      --navy-900: #0b1f3a;
-      --navy-800: #12345d;
-      --blue-700: #2563eb;
-      --blue-600: #2f6bff;
-      --blue-500: #4f7cff;
-      --violet-600: #6d28d9;
-      --sky-100: #ecf4ff;
-      --sky-50: #f7faff;
-      --gray-950: #111827;
-      --gray-900: #1f2937;
-      --gray-800: #334155;
-      --gray-700: #475569;
-      --gray-600: #64748b;
-      --gray-500: #94a3b8;
-      --gray-300: #cbd5e1;
-      --gray-200: #e2e8f0;
-      --gray-100: #f1f5f9;
-      --gray-50: #f8fafc;
-      --white: #ffffff;
-      --yellow-kakao: #fee500;
-      --black: #111111;
-      --green: #15b981;
-      --red: #ef4444;
-      --radius-xl: 28px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --radius-sm: 12px;
-      --shadow-lg: 0 28px 60px rgba(7, 20, 40, 0.16);
-      --shadow-md: 0 16px 40px rgba(7, 20, 40, 0.12);
-      --shadow-sm: 0 10px 24px rgba(7, 20, 40, 0.08);
-      --max: 1280px;
-      --header-h: 86px;
-      --section-py: 112px;
-      --section-px: 24px;
-      --line: 1px solid rgba(148, 163, 184, 0.22);
-      --transition: 0.28s ease;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-      color: var(--gray-950);
-      background: var(--white);
-      line-height: 1.72;
-      letter-spacing: -0.02em;
-      word-break: keep-all;
-      overflow-x: hidden;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
-
-    .container {
-      width: min(100%, var(--max));
-      margin: 0 auto;
-      padding-left: var(--section-px);
-      padding-right: var(--section-px);
-    }
-
-    .section {
-      position: relative;
-      padding: var(--section-py) 0;
-    }
-
-    .section-tight {
-      padding: 84px 0;
-    }
-
-    .section-dark {
-      color: var(--white);
-      background: linear-gradient(135deg, var(--navy-950), var(--navy-900) 58%, #132d66);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(47, 107, 255, 0.1);
-      color: var(--blue-700);
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 18px;
-    }
-
-    .section-dark .eyebrow {
-      background: rgba(255, 255, 255, 0.12);
-      color: #dce8ff;
-    }
-
-    .title-wrap {
-      max-width: 780px;
-      margin-bottom: 38px;
-    }
-
-    .section-title {
-      margin: 0 0 14px;
-      font-size: clamp(31px, 4.2vw, 56px);
-      line-height: 1.22;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-
-    .section-desc {
-      margin: 0;
-      font-size: clamp(16px, 2vw, 20px);
-      color: var(--gray-700);
-      line-height: 1.85;
-    }
-
-    .section-dark .section-desc {
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .accent {
-      color: var(--blue-700);
-      font-weight: 900;
-    }
-
-    .accent-violet {
-      color: var(--violet-600);
-      font-weight: 900;
-    }
-
-    .accent-white {
-      color: #ffffff;
-      font-weight: 900;
-    }
-
-    .muted {
-      color: var(--gray-600);
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.78s ease, transform 0.78s ease;
-    }
-
-    .reveal.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .delay-1 {
-      transition-delay: 0.08s;
-    }
-
-    .delay-2 {
-      transition-delay: 0.16s;
-    }
-
-    .delay-3 {
-      transition-delay: 0.24s;
-    }
-
-    .delay-4 {
-      transition-delay: 0.32s;
-    }
-
-    header.site-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1100;
-      height: var(--header-h);
-      transition: background var(--transition), box-shadow var(--transition), border-color var(--transition);
-      background: rgba(7, 20, 40, 0.18);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    header.site-header.scrolled {
-      background: rgba(255, 255, 255, 0.94);
-      border-bottom: 1px solid rgba(148, 163, 184, 0.18);
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-    }
-
-    .header-inner {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      min-width: 0;
-    }
-
-    .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--blue-600), var(--violet-600));
-      display: grid;
-      place-items: center;
-      box-shadow: 0 12px 22px rgba(79, 124, 255, 0.3);
-      flex-shrink: 0;
-    }
-
-    .brand-mark svg {
-      width: 24px;
-      height: 24px;
-      stroke: #fff;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .brand-text {
-      min-width: 0;
-    }
-
-    .brand-name {
-      font-size: 19px;
-      font-weight: 900;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      color: #fff;
-      transition: color var(--transition);
-    }
-
-    .brand-sub {
-      margin-top: 3px;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.76);
-      transition: color var(--transition);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 320px;
-    }
-
-    header.site-header.scrolled .brand-name {
-      color: var(--gray-950);
-    }
-
-    header.site-header.scrolled .brand-sub {
-      color: var(--gray-600);
-    }
-
-    nav.gnb {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .gnb-list {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .gnb-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      color: rgba(255, 255, 255, 0.92);
-      font-size: 15px;
-      font-weight: 700;
-      transition: background var(--transition), color var(--transition), transform var(--transition);
-    }
-
-    .gnb-link:hover {
-      transform: translateY(-1px);
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .gnb-link svg {
-      width: 17px;
-      height: 17px;
-      stroke: currentColor;
-      stroke-width: 2.1;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    header.site-header.scrolled .gnb-link {
-      color: var(--gray-800);
-    }
-
-    header.site-header.scrolled .gnb-link:hover {
-      background: var(--gray-100);
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 52px;
-      padding: 0 22px;
-      border: 0;
-      border-radius: 14px;
-      cursor: pointer;
-      font-size: 15px;
-      font-weight: 800;
-      line-height: 1;
-      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
-      white-space: nowrap;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn svg {
-      width: 18px;
-      height: 18px;
-      stroke: currentColor;
-      stroke-width: 2.1;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--blue-600), var(--violet-600));
-      color: var(--white);
-      box-shadow: 0 16px 30px rgba(59, 91, 219, 0.28);
-    }
-
-    .btn-primary:hover {
-      box-shadow: 0 22px 34px rgba(59, 91, 219, 0.32);
-    }
-
-    .btn-dark {
-      background: var(--black);
-      color: #fff;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .btn-dark:hover {
-      background: #000;
-    }
-
-    .btn-ghost {
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
-
-    .btn-ghost:hover {
-      background: rgba(255, 255, 255, 0.18);
-    }
-
-    header.site-header.scrolled .btn-ghost {
-      background: var(--gray-100);
-      color: var(--gray-900);
-      border-color: rgba(148, 163, 184, 0.18);
-    }
-
-    .mobile-menu-btn {
-      display: none;
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      border: 0;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.14);
-      color: #fff;
-      cursor: pointer;
-      transition: background var(--transition), color var(--transition);
-    }
-
-    .mobile-menu-btn svg {
-      width: 22px;
-      height: 22px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    header.site-header.scrolled .mobile-menu-btn {
-      background: var(--gray-100);
-      color: var(--gray-900);
-    }
-
-    .mobile-drawer {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: min(90vw, 420px);
-      height: 100dvh;
-      background: #fff;
-      z-index: 1400;
-      box-shadow: -16px 0 40px rgba(15, 23, 42, 0.12);
-      transition: right 0.32s ease;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .mobile-drawer.open {
-      right: 0;
-    }
-
-    .drawer-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(2, 6, 23, 0.55);
-      z-index: 1300;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .drawer-overlay.show {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .drawer-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 20px 20px 14px;
-      border-bottom: var(--line);
-    }
-
-    .drawer-title {
-      font-size: 19px;
-      font-weight: 900;
-      color: var(--gray-950);
-    }
-
-    .drawer-close {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      border: 0;
-      background: var(--gray-100);
-      display: grid;
-      place-items: center;
-      cursor: pointer;
-    }
-
-    .drawer-close svg {
-      width: 20px;
-      height: 20px;
-      stroke: var(--gray-950);
-      stroke-width: 2.3;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .drawer-body {
-      padding: 18px 20px 140px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .drawer-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 16px 18px;
-      border-radius: 16px;
-      background: var(--gray-50);
-      border: 1px solid rgba(148, 163, 184, 0.16);
-      font-weight: 800;
-      color: var(--gray-900);
-    }
-
-    .drawer-link-left {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .drawer-link svg {
-      width: 18px;
-      height: 18px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .drawer-bottom {
-      margin-top: 8px;
-      display: grid;
-      gap: 10px;
-    }
-
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      color: #fff;
-      background: #040c18;
-      padding-top: var(--header-h);
-    }
-
-    .hero-video,
-    .hero-fallback {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-fallback {
-      background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      display: none;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(79, 124, 255, 0.25), transparent 24%),
-        linear-gradient(90deg, rgba(4, 12, 24, 0.82) 0%, rgba(4, 12, 24, 0.62) 50%, rgba(4, 12, 24, 0.74) 100%);
-      z-index: 1;
-    }
-
-    .hero-grid {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
-      gap: 36px;
-      align-items: center;
-      width: 100%;
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    .hero-copy {
-      max-width: 760px;
-    }
-
-    .hero-badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 22px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      font-size: 13px;
-      font-weight: 800;
-      line-height: 1;
-      color: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-
-    .hero-badge svg {
-      width: 15px;
-      height: 15px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .hero-title {
-      margin: 0;
-      font-size: clamp(40px, 6vw, 78px);
-      line-height: 1.08;
-      letter-spacing: -0.055em;
-      font-weight: 900;
-    }
-
-    .hero-title .line {
-      display: block;
-    }
-
-    .hero-title .highlight {
-      color: #b7cbff;
-    }
-
-    .hero-desc {
-      margin: 22px 0 0;
-      font-size: clamp(17px, 2vw, 22px);
-      line-height: 1.92;
-      color: rgba(255, 255, 255, 0.86);
-      max-width: 700px;
-    }
-
-    .hero-desc strong {
-      color: #fff;
-      font-weight: 900;
-    }
-
-    .hero-cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .hero-mini-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 30px;
-      max-width: 720px;
-    }
-
-    .hero-mini-card {
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-
-    .hero-mini-card strong {
-      display: block;
-      font-size: 15px;
-      font-weight: 900;
-      line-height: 1.35;
-    }
-
-    .hero-mini-card span {
-      display: block;
-      margin-top: 6px;
-      font-size: 13px;
-      line-height: 1.65;
-      color: rgba(255, 255, 255, 0.84);
-    }
-
-    .hero-panel {
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      padding: 22px;
-      box-shadow: var(--shadow-lg);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-
-    .hero-panel-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .hero-panel-title {
-      font-size: 19px;
-      font-weight: 900;
-      line-height: 1.32;
-    }
-
-    .hero-panel-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.1);
-      font-size: 12px;
-      font-weight: 800;
-      color: rgba(255, 255, 255, 0.92);
-      flex-shrink: 0;
-    }
-
-    .hero-panel-chip svg {
-      width: 14px;
-      height: 14px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .hero-facts {
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .hero-fact {
-      display: grid;
-      grid-template-columns: 22px 1fr;
-      gap: 12px;
-      align-items: start;
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-    }
-
-    .hero-fact:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .hero-fact svg {
-      width: 22px;
-      height: 22px;
-      stroke: #d6e2ff;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      margin-top: 2px;
-    }
-
-    .hero-fact strong {
-      display: block;
-      font-size: 15px;
-      font-weight: 900;
-      line-height: 1.4;
-      color: #fff;
-    }
-
-    .hero-fact p {
-      margin: 5px 0 0;
-      font-size: 14px;
-      line-height: 1.72;
-      color: rgba(255, 255, 255, 0.84);
-    }
-
-    .hero-bottom-strip {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2;
-      background: linear-gradient(180deg, transparent, rgba(4, 12, 24, 0.82));
-      padding-bottom: 24px;
-    }
-
-    .hero-quick-bar {
-      width: min(100%, calc(var(--max) - 48px));
-      margin: 0 auto;
-      padding: 18px 20px;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    .quick-item {
-      padding: 12px 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.08);
-      min-height: 82px;
-    }
-
-    .quick-item strong {
-      display: block;
-      font-size: 15px;
-      font-weight: 900;
-      color: #fff;
-      line-height: 1.38;
-    }
-
-    .quick-item span {
-      display: block;
-      margin-top: 6px;
-      font-size: 13px;
-      line-height: 1.58;
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .vision-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.03fr) minmax(360px, 0.97fr);
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .box {
-      position: relative;
-      border-radius: var(--radius-xl);
-      background: #fff;
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-    }
-
-    .box-pad {
-      padding: 34px;
-    }
-
-    .box-dark {
-      background: linear-gradient(135deg, var(--navy-900), #17335f);
-      color: #fff;
-      border: 0;
-      box-shadow: var(--shadow-md);
-    }
-
-    .vision-lead {
-      font-size: clamp(28px, 3.5vw, 44px);
-      line-height: 1.22;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      margin: 0;
-    }
-
-    .vision-lead strong {
-      color: var(--blue-700);
-    }
-
-    .vision-list {
-      display: grid;
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .vision-item {
-      display: grid;
-      grid-template-columns: 54px 1fr;
-      gap: 16px;
-      align-items: start;
-      padding: 18px 18px 18px 0;
-      border-top: 1px dashed rgba(148, 163, 184, 0.25);
-    }
-
-    .vision-item:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .vision-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: var(--sky-100);
-      color: var(--blue-700);
-    }
-
-    .vision-icon svg {
-      width: 24px;
-      height: 24px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .vision-item strong {
-      display: block;
-      font-size: 18px;
-      line-height: 1.42;
-      font-weight: 900;
-    }
-
-    .vision-item p {
-      margin: 8px 0 0;
-      font-size: 15px;
-      color: var(--gray-700);
-      line-height: 1.84;
-    }
-
-    .vision-fact-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 26px;
-    }
-
-    .vision-fact {
-      padding: 20px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .vision-fact .number {
-      display: block;
-      font-size: clamp(24px, 3.3vw, 36px);
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .vision-fact p {
-      margin: 0;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.84);
-      line-height: 1.7;
-    }
-
-    .vision-strip {
-      margin-top: 16px;
-      padding: 18px 20px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 15px;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .brand-summary-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 20px;
-      align-items: start;
-    }
-
-    .brand-panel {
-      border-radius: 30px;
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      background: #fff;
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-    }
-
-    .brand-panel-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 24px 28px;
-      border-bottom: var(--line);
-    }
-
-    .brand-panel-title {
-      font-size: 24px;
-      font-weight: 900;
-      line-height: 1.3;
-    }
-
-    .brand-panel-sub {
-      margin-top: 7px;
-      font-size: 15px;
-      color: var(--gray-600);
-    }
-
-    .brand-stat {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 4px;
-      padding: 10px 14px;
-      border-radius: 18px;
-      background: var(--sky-50);
-    }
-
-    .brand-stat strong {
-      font-size: 20px;
-      font-weight: 900;
-      line-height: 1;
-      color: var(--blue-700);
-    }
-
-    .brand-stat span {
-      font-size: 12px;
-      color: var(--gray-600);
-      font-weight: 700;
-    }
-
-    .brand-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      padding: 24px 28px 28px;
-    }
-
-    .brand-card {
-      position: relative;
-      border-radius: 24px;
-      background: linear-gradient(180deg, #fff, #f9fbff);
-      border: 1px solid rgba(148, 163, 184, 0.18);
-      padding: 20px;
-      min-height: 212px;
-      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-      overflow: hidden;
-    }
-
-    .brand-card::after {
-      content: "";
-      position: absolute;
-      inset: auto -40px -56px auto;
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(79, 124, 255, 0.16), transparent 68%);
-    }
-
-    .brand-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(79, 124, 255, 0.3);
-    }
-
-    .brand-card-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 18px;
-    }
-
-    .brand-logo-slot {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      border: 1px dashed rgba(37, 99, 235, 0.3);
-      background: #f4f8ff;
-      display: grid;
-      place-items: center;
-      color: var(--blue-700);
-      font-size: 11px;
-      font-weight: 900;
-      text-align: center;
-      line-height: 1.2;
-      padding: 4px;
-      flex-shrink: 0;
-    }
-
-    .brand-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 9px 10px;
-      border-radius: 999px;
-      background: var(--gray-50);
-      font-size: 11px;
-      font-weight: 900;
-      color: var(--gray-700);
-      border: 1px solid rgba(148, 163, 184, 0.18);
-    }
-
-    .brand-card h3 {
-      margin: 0;
-      font-size: 20px;
-      line-height: 1.34;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-    }
-
-    .brand-card p {
-      margin: 9px 0 0;
-      font-size: 14px;
-      color: var(--gray-700);
-      line-height: 1.78;
-    }
-
-    .brand-card .tag-line {
-      display: block;
-      margin-top: 14px;
-      font-size: 13px;
-      line-height: 1.55;
-      font-weight: 800;
-      color: var(--blue-700);
-    }
-
-    .brand-right-stack {
-      display: grid;
-      gap: 16px;
-    }
-
-    .info-box {
-      border-radius: 28px;
-      padding: 28px;
-      background: linear-gradient(135deg, var(--navy-900), var(--navy-800));
-      color: #fff;
-      box-shadow: var(--shadow-md);
-    }
-
-    .info-box h3 {
-      margin: 0;
-      font-size: 24px;
-      line-height: 1.34;
-      font-weight: 900;
-      letter-spacing: -0.03em;
-    }
-
-    .info-box p {
-      margin: 14px 0 0;
-      font-size: 15px;
-      line-height: 1.82;
-      color: rgba(255, 255, 255, 0.88);
-    }
-
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 13px;
-      line-height: 1;
-      font-weight: 800;
-      color: rgba(255, 255, 255, 0.94);
-    }
-
-    .pill svg {
-      width: 14px;
-      height: 14px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .mini-bullets {
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .mini-bullets li {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 18px 1fr;
-      gap: 10px;
-      align-items: start;
-      font-size: 14px;
-      line-height: 1.74;
-      color: rgba(255, 255, 255, 0.88);
-    }
-
-    .mini-bullets li svg {
-      width: 18px;
-      height: 18px;
-      margin-top: 2px;
-      stroke: #fff;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .service-summary-grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .service-row {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 20px;
-      align-items: stretch;
-      min-height: 310px;
-    }
-
-    .service-row:nth-child(even) {
-      grid-template-columns: 0.95fr 1.05fr;
-    }
-
-    .service-row:nth-child(even) .service-media {
-      order: 2;
-    }
-
-    .service-row:nth-child(even) .service-copy {
-      order: 1;
-    }
-
-    .service-media {
-      position: relative;
-      border-radius: 30px;
-      overflow: hidden;
-      min-height: 100%;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .service-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .service-media::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 22%, rgba(3, 10, 20, 0.56));
-    }
-
-    .service-media-label {
-      position: absolute;
-      left: 20px;
-      bottom: 20px;
-      z-index: 1;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.16);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      font-size: 13px;
-      font-weight: 900;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-
-    .service-copy {
-      position: relative;
-      border-radius: 30px;
-      padding: 30px;
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(148, 163, 184, 0.16);
-    }
-
-    .service-copy::before {
-      content: "";
-      position: absolute;
-      right: -30px;
-      top: -30px;
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      opacity: 0.55;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 65%);
-      pointer-events: none;
-    }
-
-    .service-copy.blue {
-      background: linear-gradient(135deg, #f7fbff, #ecf4ff);
-    }
-
-    .service-copy.violet {
-      background: linear-gradient(135deg, #f8f5ff, #f1ebff);
-    }
-
-    .service-copy.navy {
-      background: linear-gradient(135deg, var(--navy-900), #17315a);
-      color: #fff;
-      border: 0;
-    }
-
-    .service-copy.gray {
-      background: linear-gradient(135deg, #ffffff, #f8fafc);
-    }
-
-    .service-copy.mint {
-      background: linear-gradient(135deg, #f2fffb, #e9fff9);
-    }
-
-    .service-copy.sky {
-      background: linear-gradient(135deg, #f7fbff, #eff6ff);
-    }
-
-    .service-copy.green {
-      background: linear-gradient(135deg, #f8fff7, #effced);
-    }
-
-    .service-icon-badge {
-      width: 60px;
-      height: 60px;
-      border-radius: 20px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 18px;
-      background: rgba(255, 255, 255, 0.78);
-      box-shadow: 0 12px 20px rgba(148, 163, 184, 0.12);
-    }
-
-    .service-copy.navy .service-icon-badge {
-      background: rgba(255, 255, 255, 0.12);
-      box-shadow: none;
-    }
-
-    .service-icon-badge svg {
-      width: 26px;
-      height: 26px;
-      stroke: var(--blue-700);
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .service-copy.navy .service-icon-badge svg {
-      stroke: #fff;
-    }
-
-    .service-copy h3 {
-      margin: 0;
-      font-size: clamp(26px, 3vw, 38px);
-      line-height: 1.22;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-
-    .service-copy p {
-      margin: 14px 0 0;
-      font-size: 15px;
-      line-height: 1.86;
-      color: var(--gray-700);
-    }
-
-    .service-copy.navy p {
-      color: rgba(255, 255, 255, 0.86);
-    }
-
-    .service-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.76);
-      font-size: 12px;
-      line-height: 1;
-      font-weight: 900;
-      color: var(--gray-800);
-      margin-bottom: 16px;
-    }
-
-    .service-copy.navy .service-kicker {
-      background: rgba(255, 255, 255, 0.12);
-      color: rgba(255, 255, 255, 0.96);
-    }
-
-    .service-feature-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .service-feature {
-      padding: 14px 16px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      font-size: 13px;
-      line-height: 1.65;
-      font-weight: 700;
-      color: var(--gray-800);
-    }
-
-    .service-copy.navy .service-feature {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.94);
-    }
-
-    .service-infographic {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 22px;
-    }
-
-    .service-step {
-      padding: 14px 12px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      text-align: center;
-    }
-
-    .service-copy.navy .service-step {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.08);
-    }
-
-    .service-step strong {
-      display: block;
-      font-size: 13px;
-      font-weight: 900;
-      line-height: 1.35;
-    }
-
-    .service-step span {
-      display: block;
-      margin-top: 6px;
-      font-size: 12px;
-      color: var(--gray-600);
-      line-height: 1.5;
-    }
-
-    .service-copy.navy .service-step span {
-      color: rgba(255, 255, 255, 0.74);
-    }
-
-    .executives-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .executive-card {
-      border-radius: 32px;
-      overflow: hidden;
-      background: #fff;
-      border: 1px solid rgba(148, 163, 184, 0.16);
-      box-shadow: var(--shadow-sm);
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .executive-card:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .executive-photo {
-      position: relative;
-      aspect-ratio: 1.1 / 1;
-      overflow: hidden;
-    }
-
-    .executive-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .executive-photo::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 36%, rgba(7, 20, 40, 0.68));
-    }
-
-    .executive-name-badge {
-      position: absolute;
-      left: 24px;
-      bottom: 22px;
-      z-index: 1;
-      color: #fff;
-    }
-
-    .executive-name-badge strong {
-      display: block;
-      font-size: 28px;
-      line-height: 1.1;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-
-    .executive-name-badge span {
-      display: block;
-      margin-top: 6px;
-      font-size: 14px;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .executive-body {
-      padding: 28px;
-    }
-
-    .executive-intro {
-      margin: 0 0 20px;
-      font-size: 15px;
-      line-height: 1.9;
-      color: var(--gray-700);
-    }
-
-    .executive-detail-grid {
-      display: grid;
-      gap: 12px;
-    }
-
-    .executive-detail {
-      display: grid;
-      grid-template-columns: 104px 1fr;
-      gap: 10px;
-      padding: 12px 0;
-      border-top: 1px dashed rgba(148, 163, 184, 0.26);
-      font-size: 14px;
-      line-height: 1.78;
-    }
-
-    .executive-detail:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .executive-detail strong {
-      font-weight: 900;
-      color: var(--gray-950);
-    }
-
-    .executive-detail span {
-      color: var(--gray-700);
-    }
-
-    .executive-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .link-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 44px;
-      padding: 0 14px;
-      border-radius: 999px;
-      background: var(--gray-100);
-      font-size: 13px;
-      font-weight: 900;
-      color: var(--gray-900);
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      transition: transform var(--transition), background var(--transition);
-    }
-
-    .link-chip:hover {
-      transform: translateY(-2px);
-      background: #edf2ff;
-    }
-
-    .link-chip svg {
-      width: 16px;
-      height: 16px;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 22px;
-      align-items: stretch;
-    }
-
-    .trust-media-box,
-    .trust-photo-box {
-      border-radius: 32px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: var(--shadow-md);
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .video-wrap {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: rgba(0, 0, 0, 0.18);
-    }
-
-    .video-wrap iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .trust-caption {
-      padding: 20px 24px 24px;
-    }
-
-    .trust-caption strong {
-      display: block;
-      font-size: 18px;
-      line-height: 1.45;
-      font-weight: 900;
-    }
-
-    .trust-caption p {
-      margin: 8px 0 0;
-      font-size: 14px;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.84);
-    }
-
-    .trust-photo-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      height: 100%;
-    }
-
-    .trust-photo-card {
-      border-radius: 28px;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: var(--shadow-sm);
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .trust-photo-card img {
-      aspect-ratio: 1.2 / 1;
-      object-fit: cover;
-    }
-
-    .trust-photo-card .caption {
-      padding: 16px 18px 20px;
-      font-size: 14px;
-      line-height: 1.74;
-      color: rgba(255, 255, 255, 0.88);
-      flex: 1;
-    }
-
-    .revenue-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
-      gap: 22px;
-      align-items: start;
-    }
-
-    .revenue-box {
-      border-radius: 32px;
-      background: #fff;
-      border: 1px solid rgba(148, 163, 184, 0.16);
-      box-shadow: var(--shadow-sm);
-      padding: 30px;
-    }
-
-    .revenue-box h3 {
-      margin: 0;
-      font-size: 28px;
-      line-height: 1.3;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-
-    .revenue-box p {
-      margin: 14px 0 0;
-      font-size: 15px;
-      line-height: 1.84;
-      color: var(--gray-700);
-    }
-
-    .revenue-steps {
-      display: grid;
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .revenue-step {
-      display: grid;
-      grid-template-columns: 88px 1fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .revenue-value {
-      min-height: 82px;
-      display: grid;
-      place-items: center;
-      padding: 10px;
-      border-radius: 24px;
-      background: linear-gradient(135deg, var(--sky-100), #f4f8ff);
-      color: var(--blue-700);
-      text-align: center;
-    }
-
-    .revenue-value strong {
-      display: block;
-      font-size: 26px;
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
-
-    .revenue-value span {
-      display: block;
-      margin-top: 7px;
-      font-size: 12px;
-      line-height: 1.4;
-      color: var(--gray-600);
-      font-weight: 800;
-    }
-
-    .revenue-desc {
-      padding: 18px 20px;
-      border-radius: 24px;
-      background: var(--gray-50);
-      border: 1px solid rgba(148, 163, 184, 0.16);
-    }
-
-    .revenue-desc strong {
-      display: block;
-      font-size: 16px;
-      line-height: 1.45;
-      font-weight: 900;
-      color: var(--gray-950);
-    }
-
-    .revenue-desc p {
-      margin: 7px 0 0;
-      font-size: 14px;
-      line-height: 1.76;
-      color: var(--gray-700);
-    }
-
-    .revenue-graph {
-      border-radius: 32px;
-      background: linear-gradient(135deg, var(--navy-900), #122f59);
-      color: #fff;
-      box-shadow: var(--shadow-md);
-      padding: 28px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .revenue-graph::before {
-      content: "";
-      position: absolute;
-      right: -40px;
-      top: -20px;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(79, 124, 255, 0.32), transparent 66%);
-      pointer-events: none;
-    }
-
-    .revenue-graph h3 {
-      margin: 0;
-      font-size: 26px;
-      line-height: 1.32;
-      font-weight: 900;
-    }
-
-    .revenue-graph p {
-      margin: 12px 0 0;
-      font-size: 15px;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.86);
-    }
-
-    .bars {
-      display: flex;
-      align-items: end;
-      gap: 14px;
-      margin-top: 36px;
-      min-height: 250px;
-    }
-
-    .bar-col {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      gap: 10px;
-      min-width: 0;
-    }
-
-    .bar-track {
-      position: relative;
-      height: 220px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.1);
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      align-items: end;
-    }
-
-    .bar-fill {
-      width: 100%;
-      border-radius: 20px 20px 0 0;
-      background: linear-gradient(180deg, #8db0ff, #4f7cff 72%, #315fe9);
-      transition: height 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .bar-label {
-      text-align: center;
-      font-size: 13px;
-      line-height: 1.56;
-      color: rgba(255, 255, 255, 0.88);
-      font-weight: 800;
-    }
-
-    .bar-value {
-      text-align: center;
-      font-size: 14px;
-      line-height: 1.4;
-      font-weight: 900;
-      color: #fff;
-    }
-
-    .faq-preview {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--navy-950), var(--navy-900), #183566);
-    }
-
-    .faq-preview::before,
-    .faq-preview::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(79, 124, 255, 0.22), transparent 66%);
-      pointer-events: none;
-    }
-
-    .faq-preview::before {
-      width: 260px;
-      height: 260px;
-      right: -80px;
-      top: -80px;
-    }
-
-    .faq-preview::after {
-      width: 220px;
-      height: 220px;
-      left: -70px;
-      bottom: -80px;
-    }
-
-    .faq-preview-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 0.84fr) minmax(340px, 1.16fr);
-      gap: 22px;
-      align-items: start;
-    }
-
-    .faq-left p {
-      color: rgba(255, 255, 255, 0.84);
-    }
-
-    .faq-category-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-    }
-
-    .faq-cat {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.1);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .faq-items {
-      display: grid;
-      gap: 14px;
-    }
-
-    .faq-card {
-      padding: 20px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .faq-card strong {
-      font-size: 18px;
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .faq-card p {
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    /* CTA */
-    .cta-wrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .cta-copy {
-      padding: 30px;
-      border-radius: 24px;
-      background: #f4f8ff;
-    }
-
-    .cta-copy h3 {
-      font-size: 32px;
-      font-weight: 900;
-      line-height: 1.3;
-    }
-
-    .cta-copy p {
-      margin-top: 12px;
-      font-size: 16px;
-    }
-
-    .contact-box {
-      border-radius: 24px;
-      background: #fff;
-      padding: 24px;
-      border: 1px solid #e2e8f0;
-    }
-
-    .field {
-      margin-bottom: 12px;
-    }
-
-    .field input,
-    .field select {
-      width: 100%;
-      height: 50px;
-      border-radius: 12px;
-      border: 1px solid #ddd;
-      padding: 0 12px;
-    }
-
-    .check-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 8px;
-    }
-
-    .check-item label {
-      display:block;
-      padding:10px;
-      background:#f3f4f6;
-      border-radius:10px;
-      text-align:center;
-      font-size:13px;
-      font-weight:700;
-    }
-
-    .submit-btn {
-      width:100%;
-      height:54px;
-      background:#2563EB;
-      color:#fff;
-      border:none;
-      border-radius:14px;
-      font-weight:900;
-      margin-top:12px;
-    }
-
-    /* 플로팅 버튼 */
-    .floating {
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      z-index:999;
-    }
-
-    .kakao-btn {
-      background:#FEE500;
-      color:#111;
-      padding:14px;
-      border-radius:14px;
-      font-weight:900;
-      text-align:center;
-    }
-
-    .contact-btn {
-      background:#111;
-      color:#fff;
-      padding:14px;
-      border-radius:14px;
-      font-weight:900;
-      text-align:center;
-    }
-
-  </style>
+  <meta name="keywords" content="깐부파트너스, 깐부마케팅, 깐부AI솔루션, KPFC, PICKCAR, 정책자금, 마케팅, AI, 신차장기렌트, 신차리스" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="깐부파트너스 | 실행형 브랜드 그룹" />
+  <meta
+    property="og:description"
+    content="직접 운영 브랜드 4개와 검증된 협력 구조를 바탕으로, 말보다 실행이 먼저 보이게 만든 회사입니다."
+  />
+  <meta property="og:url" content="./index.html" />
+  <meta property="og:image" content="./assets/images/hero/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
-
 <body>
+  <div id="wrap">
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="./index.html" class="logo" aria-label="깐부파트너스 홈으로 이동">
+          <span class="logo-mark">G</span>
+          <span class="logo-text">깐부파트너스</span>
+        </a>
 
-<!-- FAQ -->
-<section class="faq-preview section-dark">
-  <div class="container faq-preview-grid">
-    
-    <div class="faq-left">
-      <h2>이미 여기서 고민합니다</h2>
-      <p>상담 전에 대부분 여기서 막힙니다. 미리 답드립니다.</p>
+        <nav class="gnb pc-only" aria-label="주요 메뉴">
+          <a href="./index.html" class="active">홈</a>
+          <a href="./about.html">회사소개</a>
+          <a href="./services.html">서비스소개</a>
+          <a href="./revenue.html">수익구조</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./contact.html">문의하기</a>
+        </nav>
 
-      <div class="faq-category-row">
-        <div class="faq-cat">회사</div>
-        <div class="faq-cat">브랜드</div>
-        <div class="faq-cat">수익</div>
-        <div class="faq-cat">창업</div>
-        <div class="faq-cat">마케팅</div>
-        <div class="faq-cat">KPFC</div>
+        <div class="header-actions">
+          <a href="./contact.html" class="btn btn-primary pc-only">문의하기</a>
+          <button
+            type="button"
+            class="menu-toggle mobile-only"
+            id="menuToggle"
+            aria-label="모바일 메뉴 열기"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav" aria-label="모바일 메뉴">
+          <a href="./index.html" class="active">홈</a>
+          <a href="./about.html">회사소개</a>
+          <a href="./services.html">서비스소개</a>
+          <a href="./revenue.html">수익구조</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./contact.html">문의하기</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section landing-hero">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-text-box fade-up reveal-item">
+            <p class="hero-kicker">실행하는 브랜드 그룹</p>
+            <h1>
+              다 한다고 말하지 않습니다.<br />
+              <span>잘하는 4개는 직접 운영</span>하고,<br />
+              나머지는 <span>검증된 협력 구조</span>로 연결합니다.
+            </h1>
+            <p class="hero-desc">
+              깐부파트너스는 단순 소개용 회사가 아닙니다.<br />
+              브랜드, 서비스, 운영진, 신뢰 요소, 수익 구조까지 한 페이지 안에서
+              이해되고 문의로 이어지도록 설계된 실행형 브랜드 그룹입니다.
+            </p>
+
+            <div class="hero-cta">
+              <a href="./contact.html" class="btn btn-primary">바로 문의하기</a>
+              <a href="./services.html" class="btn btn-outline">서비스 먼저 보기</a>
+            </div>
+
+            <ul class="hero-points">
+              <li>직접 운영 브랜드 4개</li>
+              <li>MOU 협력 구조 공개</li>
+              <li>신뢰 요소 · 수익 구조 · FAQ까지 한 번에 확인</li>
+            </ul>
+          </div>
+
+          <div class="hero-card fade-up delay-1 reveal-item">
+            <div class="hero-card-top">
+              <span class="mini-badge">핵심 운영 구조</span>
+              <strong>직접 운영 + 검증된 연결</strong>
+            </div>
+
+            <div class="hero-brand-list">
+              <div class="hero-brand-item">
+                <span class="brand-name">깐부마케팅</span>
+                <span class="brand-tag">실행형 마케팅</span>
+              </div>
+              <div class="hero-brand-item">
+                <span class="brand-name">깐부AI솔루션</span>
+                <span class="brand-tag">AI 자동화 · 업무 효율화</span>
+              </div>
+              <div class="hero-brand-item">
+                <span class="brand-name">KPFC</span>
+                <span class="brand-tag">정책자금 컨설팅</span>
+              </div>
+              <div class="hero-brand-item">
+                <span class="brand-name">PICKCAR</span>
+                <span class="brand-tag">신차 장기렌트 · 리스</span>
+              </div>
+            </div>
+
+            <div class="hero-card-bottom">
+              <p>
+                모든 걸 직접 하는 회사처럼 보이기보다,<br />
+                실제로 움직이는 구조가 먼저 보이게 설계합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip section-space-sm">
+        <div class="container">
+          <div class="intro-strip-box fade-up reveal-item">
+            <div class="intro-strip-item">
+              <strong>회사 정체성</strong>
+              <span>브랜드를 만들고 직접 운영하는 실행형 그룹</span>
+            </div>
+            <div class="intro-strip-item">
+              <strong>핵심 방향</strong>
+              <span>잘하는 건 직접, 나머지는 검증된 연결</span>
+            </div>
+            <div class="intro-strip-item">
+              <strong>홈페이지 목적</strong>
+              <span>읽게 하는 게 아니라 이해시키고 문의로 연결</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision-section section-space">
+        <div class="container">
+          <div class="section-head center fade-up reveal-item">
+            <p class="section-kicker">회사 비전</p>
+            <h2>말 많은 회사보다, 움직이는 구조가 보이는 회사</h2>
+            <p>
+              뜬구름 같은 문구를 늘어놓기보다,<br />
+              실제로 어떤 브랜드를 운영하고, 어떤 방식으로 연결하고, 왜 이런 구조로 가는지
+              한 번에 이해되게 만드는 것이 깐부파트너스의 방향입니다.
+            </p>
+          </div>
+
+          <div class="vision-grid">
+            <article class="vision-card fade-up reveal-item">
+              <div class="vision-number">01</div>
+              <h3>다 하는 회사처럼 보이지 않기</h3>
+              <p>
+                이것도 하고 저것도 한다는 식의 문구보다,
+                무엇을 직접 운영하는지 명확히 보여주는 구조를 우선합니다.
+              </p>
+            </article>
+
+            <article class="vision-card fade-up delay-1 reveal-item">
+              <div class="vision-number">02</div>
+              <h3>실제 하는 일 중심으로 보여주기</h3>
+              <p>
+                설명이 아니라 장면으로 이해되게,
+                방문자가 어떤 서비스를 하는 회사인지 바로 잡히게 구성합니다.
+              </p>
+            </article>
+
+            <article class="vision-card fade-up delay-2 reveal-item">
+              <div class="vision-number">03</div>
+              <h3>문의까지 자연스럽게 이어지기</h3>
+              <p>
+                회사 소개에서 끝나는 게 아니라,
+                브랜드·신뢰·수익 구조·FAQ를 본 뒤 문의가 자연스럽게 이어지게 만듭니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="structure-section section-space light-bg">
+        <div class="container">
+          <div class="section-head fade-up reveal-item">
+            <p class="section-kicker">운영 구조</p>
+            <h2>직접 운영 4개와 협력 연결 구조를 분리해 보여줍니다</h2>
+            <p>
+              브랜드가 많아 보이는 것과, 실제로 운영하는 건 다릅니다.<br />
+              그래서 깐부파트너스는 직접 운영 영역과 협력 연결 영역을 분리해서 보여줍니다.
+            </p>
+          </div>
+
+          <div class="structure-layout">
+            <div class="structure-center fade-up reveal-item">
+              <div class="structure-core">
+                <span class="core-badge">CORE</span>
+                <h3>깐부파트너스</h3>
+                <p>직접 운영 + 검증된 연결을 총괄하는 실행형 브랜드 그룹</p>
+              </div>
+            </div>
+
+            <div class="structure-columns">
+              <div class="structure-box direct fade-up delay-1 reveal-item">
+                <div class="structure-box-head">
+                  <span>직접 운영</span>
+                  <h3>핵심 브랜드 4개</h3>
+                </div>
+                <ul>
+                  <li>깐부마케팅</li>
+                  <li>깐부AI솔루션</li>
+                  <li>KPFC</li>
+                  <li>PICKCAR</li>
+                </ul>
+              </div>
+
+              <div class="structure-box partner fade-up delay-2 reveal-item">
+                <div class="structure-box-head">
+                  <span>MOU 협력</span>
+                  <h3>연결형 협력 영역</h3>
+                </div>
+                <ul>
+                  <li>깐부다이렉트</li>
+                  <li>깐부폰</li>
+                  <li>깐부렌탈</li>
+                  <li>한국태양광연금협회</li>
+                  <li>한국부업인협회</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-section section-space">
+        <div class="container">
+          <div class="section-head fade-up reveal-item">
+            <p class="section-kicker">직접 운영 브랜드</p>
+            <h2>잘하는 4개는 직접 운영합니다</h2>
+            <p>
+              이름만 나열하지 않고,<br />
+              처음 보는 사람도 “아, 이런 일을 하는 브랜드구나”가 바로 잡히게 정리했습니다.
+            </p>
+          </div>
+
+          <div class="brand-grid brand-grid-large">
+            <article class="brand-card fade-up reveal-item">
+              <div class="brand-card-head">
+                <span class="brand-label">DIRECT BRAND 01</span>
+                <h3>깐부마케팅</h3>
+              </div>
+              <p class="brand-summary">
+                유입, 리뷰, 플레이스, 홍보 실행을 중심으로 움직이는 실행형 마케팅 브랜드입니다.
+              </p>
+              <ul class="brand-detail-list">
+                <li>눈에 보이는 실행 중심</li>
+                <li>단순 광고대행보다 운영 흐름에 가까운 구조</li>
+                <li>현장형 브랜드 운영에 맞는 실전형 마케팅</li>
+              </ul>
+              <a href="./brands/marketing.html" class="text-link">브랜드 상세 보기</a>
+            </article>
+
+            <article class="brand-card fade-up delay-1 reveal-item">
+              <div class="brand-card-head">
+                <span class="brand-label">DIRECT BRAND 02</span>
+                <h3>깐부AI솔루션</h3>
+              </div>
+              <p class="brand-summary">
+                상담, 정리, 알림, 반복 업무를 줄이는 방향으로 설계하는 AI 실전 솔루션입니다.
+              </p>
+              <ul class="brand-detail-list">
+                <li>업무 자동화 중심</li>
+                <li>AI를 보여주기보다 실제로 써먹게 만드는 구조</li>
+                <li>반복 업무 절감과 정리 효율 강화</li>
+              </ul>
+              <a href="./brands/ai-solution.html" class="text-link">브랜드 상세 보기</a>
+            </article>
+
+            <article class="brand-card fade-up delay-2 reveal-item">
+              <div class="brand-card-head">
+                <span class="brand-label">DIRECT BRAND 03</span>
+                <h3>KPFC</h3>
+              </div>
+              <p class="brand-summary">
+                사업자에게 맞는 정책자금 방향과 준비 흐름을 잡아주는 정책자금 컨설팅 브랜드입니다.
+              </p>
+              <ul class="brand-detail-list">
+                <li>사업자 상황 중심 상담</li>
+                <li>단순 서류대행보다 준비 방향과 판단 기준에 집중</li>
+                <li>대표가 이해하기 쉬운 흐름 중심</li>
+              </ul>
+              <a href="./brands/kpfc.html" class="text-link">브랜드 상세 보기</a>
+            </article>
+
+            <article class="brand-card fade-up delay-3 reveal-item">
+              <div class="brand-card-head">
+                <span class="brand-label">DIRECT BRAND 04</span>
+                <h3>PICKCAR</h3>
+              </div>
+              <p class="brand-summary">
+                신차 장기렌트·리스 중심으로 상담부터 견적, 비교, 진행 흐름까지 연결하는 자동차 브랜드입니다.
+              </p>
+              <ul class="brand-detail-list">
+                <li>상담 중심의 신차 진행 구조</li>
+                <li>국산차부터 수입차까지 비교 가능</li>
+                <li>초기 비용 부담을 줄이는 방향 제안</li>
+              </ul>
+              <a href="./brands/pickcar.html" class="text-link">브랜드 상세 보기</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mou-section section-space light-bg">
+        <div class="container">
+          <div class="section-head fade-up reveal-item">
+            <p class="section-kicker">MOU 협력 영역</p>
+            <h2>직접 운영은 아니지만, 검증된 구조로 연결되는 영역들입니다</h2>
+            <p>
+              모든 걸 무리하게 직접 하지 않고,<br />
+              잘 맞는 영역은 협력사와 연결하는 방식으로 운영 폭을 넓힙니다.
+            </p>
+          </div>
+
+          <div class="mou-list-grid">
+            <div class="mou-item fade-up reveal-item">
+              <strong>깐부다이렉트</strong>
+              <span>직접 연결형 협력 영역</span>
+            </div>
+            <div class="mou-item fade-up delay-1 reveal-item">
+              <strong>깐부폰</strong>
+              <span>휴대폰 창업 · 통신 협력 영역</span>
+            </div>
+            <div class="mou-item fade-up delay-2 reveal-item">
+              <strong>깐부렌탈</strong>
+              <span>가전 렌탈 협력 영역</span>
+            </div>
+            <div class="mou-item fade-up delay-3 reveal-item">
+              <strong>한국태양광연금협회</strong>
+              <span>태양광 연금형 협력 영역</span>
+            </div>
+            <div class="mou-item fade-up reveal-item">
+              <strong>한국부업인협회</strong>
+              <span>부업 · 확장 협력 영역</span>
+            </div>
+          </div>
+
+          <div class="mou-banner fade-up delay-1 reveal-item">
+            <div class="mou-banner-text">
+              <h3>핵심은 많아 보이는 게 아니라, 연결 구조가 명확한 것입니다</h3>
+              <p>
+                깐부파트너스는 모든 브랜드를 직접 한다고 포장하기보다,
+                직접 운영과 협력 연결을 분리해 보여주는 방식으로 신뢰를 만듭니다.
+              </p>
+            </div>
+            <div class="mou-banner-action">
+              <a href="./mou/partners.html" class="btn btn-dark">협력 구조 자세히 보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-section section-space dark-bg">
+        <div class="container">
+          <div class="section-head center light fade-up reveal-item">
+            <p class="section-kicker">신뢰 요소</p>
+            <h2>소개보다 먼저 확인되는 근거를 쌓습니다</h2>
+            <p>
+              운영진, 지역사회 활동, 방송 출연, 실제 운영 구조를 통해
+              말보다 먼저 보이는 신뢰를 만들도록 구성합니다.
+            </p>
+          </div>
+
+          <div class="trust-grid">
+            <article class="trust-card fade-up reveal-item">
+              <h3>운영진 공개</h3>
+              <p>
+                누가 회사를 운영하고 있는지,
+                어떤 방향으로 브랜드를 움직이는지 확인할 수 있게 구성합니다.
+              </p>
+            </article>
+
+            <article class="trust-card fade-up delay-1 reveal-item">
+              <h3>지역사회 활동</h3>
+              <p>
+                협회 활동, 로타리 활동, 지역 기반 참여 이력 등을 통해
+                보여지는 신뢰 요소를 강화합니다.
+              </p>
+            </article>
+
+            <article class="trust-card fade-up delay-2 reveal-item">
+              <h3>방송 및 외부 노출</h3>
+              <p>
+                방송 출연, 인터뷰, 외부 노출 자료를 통해
+                화면으로 확인되는 신뢰 포인트를 쌓습니다.
+              </p>
+            </article>
+
+            <article class="trust-card fade-up delay-3 reveal-item">
+              <h3>운영 구조 공개</h3>
+              <p>
+                직접 운영 브랜드와 협력 구조, 수익 방식, FAQ까지 공개해
+                방문자의 의심이 줄어들게 만듭니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="revenue-preview section-space">
+        <div class="container">
+          <div class="revenue-wrap">
+            <div class="revenue-text fade-up reveal-item">
+              <p class="section-kicker">수익 구조</p>
+              <h2>무슨 일을 해서 수익이 만들어지는지 이해되게 보여줍니다</h2>
+              <p>
+                고객은 결국 이 부분을 궁금해합니다.<br />
+                “이 회사는 정확히 뭘 해서 돈을 버는 곳인가?”<br />
+                그래서 서비스 흐름과 수익 구조를 숨기지 않고 먼저 보여줍니다.
+              </p>
+              <a href="./revenue.html" class="btn btn-primary">수익 구조 자세히 보기</a>
+            </div>
+
+            <div class="revenue-box fade-up delay-1 reveal-item">
+              <div class="revenue-item">
+                <strong>서비스 실행 수익</strong>
+                <span>직접 운영 브랜드별 서비스 진행</span>
+              </div>
+              <div class="revenue-item">
+                <strong>상담 · 컨설팅 수익</strong>
+                <span>KPFC 및 실전형 상담 구조</span>
+              </div>
+              <div class="revenue-item">
+                <strong>연결 · 제휴 수익</strong>
+                <span>MOU 협력 구조 기반 연결 수익</span>
+              </div>
+              <div class="revenue-item">
+                <strong>브랜드 확장 수익</strong>
+                <span>운영 경험을 바탕으로 한 확장형 구조</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-preview section-space light-bg">
+        <div class="container">
+          <div class="section-head fade-up reveal-item">
+            <p class="section-kicker">FAQ</p>
+            <h2>문의 전에 걸리는 부분부터 먼저 꺼냅니다</h2>
+            <p>
+              반감을 줄이려면 숨기면 안 됩니다.<br />
+              방문자가 먼저 걸리는 지점을 홈페이지에서 먼저 정리해둡니다.
+            </p>
+          </div>
+
+          <div class="faq-preview-list">
+            <article class="faq-preview-item fade-up reveal-item">
+              <h3>깐부파트너스는 정확히 어떤 회사인가요?</h3>
+              <p>
+                직접 운영 브랜드 4개와 검증된 협력 구조를 함께 운영하는 실행형 브랜드 그룹입니다.
+              </p>
+            </article>
+
+            <article class="faq-preview-item fade-up delay-1 reveal-item">
+              <h3>모든 서비스를 직접 하는 회사인가요?</h3>
+              <p>
+                아닙니다. 잘하는 4개는 직접 운영하고, 나머지는 협력 구조로 연결합니다.
+              </p>
+            </article>
+
+            <article class="faq-preview-item fade-up delay-2 reveal-item">
+              <h3>처음 문의해도 어떤 서비스가 맞는지 안내받을 수 있나요?</h3>
+              <p>
+                가능합니다. 문의 내용을 기준으로 맞는 브랜드 또는 연결 구조를 안내하는 흐름으로 갑니다.
+              </p>
+            </article>
+          </div>
+
+          <div class="section-bottom-cta fade-up delay-3 reveal-item">
+            <a href="./faq.html" class="btn btn-outline">FAQ 전체 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-cta-section section-space">
+        <div class="container">
+          <div class="contact-cta-box fade-up reveal-item">
+            <div class="contact-cta-text">
+              <p class="section-kicker">문의하기</p>
+              <h2>여기까지 봤다면, 이제는 물어보시면 됩니다</h2>
+              <p>
+                회사가 어떤 구조인지, 어떤 브랜드를 직접 운영하는지,
+                어디까지 연결 가능한지 보셨다면 이제 문의로 이어지면 됩니다.
+              </p>
+            </div>
+            <div class="contact-cta-actions">
+              <a href="./contact.html" class="btn btn-primary">문의하기</a>
+              <a href="http://pf.kakao.com/_eTSAn" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+                카톡 문의
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <h2>깐부파트너스</h2>
+          <p>직접 운영과 검증된 연결 구조로 움직이는 실행형 브랜드 그룹</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="./about.html">회사소개</a>
+          <a href="./services.html">서비스소개</a>
+          <a href="./revenue.html">수익구조</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./contact.html">문의하기</a>
+        </div>
+
+        <div class="footer-info">
+          <p>대표번호 : 1588-9097</p>
+          <p>대표자 : 이종현</p>
+          <p>카카오채널 : 깐부파트너스</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-actions mobile-sticky">
+      <a href="http://pf.kakao.com/_eTSAn" target="_blank" rel="noopener noreferrer" class="floating-btn kakao">
+        카톡 문의
+      </a>
+      <a href="./contact.html" class="floating-btn inquiry">문의하기</a>
     </div>
-
-    <div class="faq-items">
-      <div class="faq-card">
-        <strong>이거 진짜 가능한가요?</strong>
-        <p>이미 하고 있는 사람들이 계속 가져가는 구조입니다.</p>
-      </div>
-
-      <div class="faq-card">
-        <strong>초보도 할 수 있나요?</strong>
-        <p>설명보다 구조가 중요합니다. 따라가면 됩니다.</p>
-      </div>
-
-      <div class="faq-card">
-        <strong>시간 많이 써야 하나요?</strong>
-        <p>풀타임 아닙니다. 구조 안에서 움직이는 정도입니다.</p>
-      </div>
-    </div>
-
   </div>
-</section>
 
-<!-- CTA -->
-<section class="section">
-  <div class="container cta-wrap">
-
-    <div class="cta-copy">
-      <h3>결정하지 마세요.<br>구조만 보세요.</h3>
-      <p>지금 판단 안 해도 됩니다.<br>구조 이해하면 방향은 나옵니다.</p>
-    </div>
-
-    <div class="contact-box">
-      <form>
-
-        <div class="check-grid">
-          <div class="check-item"><label>깐부폰</label></div>
-          <div class="check-item"><label>깐부렌탈</label></div>
-          <div class="check-item"><label>PICKCAR</label></div>
-          <div class="check-item"><label>KPFC</label></div>
-          <div class="check-item"><label>마케팅</label></div>
-          <div class="check-item"><label>AI</label></div>
-        </div>
-
-        <div class="field">
-          <input type="text" placeholder="이름">
-        </div>
-
-        <div class="field">
-          <input type="tel" placeholder="연락처">
-        </div>
-
-        <div class="field">
-          <select>
-            <option>09~12</option>
-            <option>12~15</option>
-            <option>15~18</option>
-            <option>18~21</option>
-          </select>
-        </div>
-
-        <button class="submit-btn">상담 신청</button>
-
-      </form>
-    </div>
-
-  </div>
-</section>
-
-<!-- 플로팅 버튼 -->
-<div class="floating">
-  <a href="#" class="kakao-btn">카카오 문의</a>
-  <a href="#" class="contact-btn">문의하기</a>
-</div>
-
+  <script src="./assets/js/common.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
-
-<!-- 히어로 섹션 -->
-<section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="https://cdn.coverr.co/videos/coverr-business-handshake-5171/1080p.mp4" type="video/mp4">
-  </video>
-  <div class="hero-fallback"></div>
-
-  <div class="container hero-grid">
-    <div class="hero-copy reveal show">
-      <div class="hero-badge-row">
-        <span class="hero-badge">실행 중심 비즈니스 플랫폼</span>
-        <span class="hero-badge">마케팅 · AI · 경영컨설팅 · 신차플랫폼</span>
-      </div>
-
-      <h1 class="hero-title">
-        <span class="line">광고만 하는 회사 아닙니다.</span>
-        <span class="line highlight">사업에 필요한 실행을 직접 하는 회사입니다.</span>
-      </h1>
-
-      <p class="hero-desc">
-        깐부파트너스는 <strong>깐부마케팅, 깐부AI솔루션, KPFC, PICKCAR</strong>를 중심으로  
-        마케팅 실행, AI 프로그램 개발, 경영컨설팅, 신차 판매 플랫폼까지  
-        사업에 필요한 핵심 영역을 직접 운영하고 있습니다.
-      </p>
-
-      <div class="hero-cta-row">
-        <a href="#services" class="btn btn-primary">서비스 보기</a>
-        <a href="#contact" class="btn btn-ghost">문의하기</a>
-      </div>
-
-      <div class="hero-mini-grid">
-        <div class="hero-mini-card">
-          <strong>깐부마케팅</strong>
-          <span>트래픽·리뷰 중심 마케팅 실행</span>
-        </div>
-        <div class="hero-mini-card">
-          <strong>깐부AI솔루션</strong>
-          <span>홈페이지·AI 프로그램·자동화 제작</span>
-        </div>
-        <div class="hero-mini-card">
-          <strong>PICKCAR</strong>
-          <span>국산차·수입차 신차 종합 판매 플랫폼</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-panel reveal show">
-      <div class="hero-panel-top">
-        <div>
-          <div class="hero-panel-title">한눈에 보는 깐부파트너스</div>
-        </div>
-        <div class="hero-panel-chip">전국 대응</div>
-      </div>
-
-      <div class="hero-facts">
-        <div class="hero-fact">
-          <div>✔</div>
-          <div>
-            <strong>브랜드를 따로따로 운영하는 게 아닙니다.</strong>
-            <p>마케팅, AI, 컨설팅, 자동차, 렌탈을 하나의 실행 구조로 연결해서 운영합니다.</p>
-          </div>
-        </div>
-
-        <div class="hero-fact">
-          <div>✔</div>
-          <div>
-            <strong>강남이 아니라 원주에서 얼굴 공개하고 운영합니다.</strong>
-            <p>지역사회 활동과 공개된 운영진 중심으로 신뢰를 쌓고, 전국 단위로 사업을 확장합니다.</p>
-          </div>
-        </div>
-
-        <div class="hero-fact">
-          <div>✔</div>
-          <div>
-            <strong>형제가 역할을 나눠 직접 운영합니다.</strong>
-            <p>이종현 대표는 사업·세일즈·전략, 이종혁 이사는 AI 개발·수도권 파트를 맡고 있습니다.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 회사 비전 소개 -->
-<section class="section" id="vision">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">회사 비전 소개</span>
-      <h2 class="section-title">겉으로 커 보이는 회사보다<br>실제로 움직이는 회사를 만듭니다.</h2>
-      <p class="section-desc">
-        깐부파트너스는 보기 좋은 설명보다 <strong>실행 구조</strong>를 먼저 만듭니다.  
-        보여주기식 조직이 아니라, 고객이 실제로 필요한 영역을 빠르게 연결하고 실행하는 구조를 지향합니다.
-      </p>
-    </div>
-
-    <div class="vision-grid">
-      <div class="box box-pad reveal">
-        <h3 class="vision-lead">
-          신뢰, 실행, 확장.<br>
-          이 3가지를 기준으로 움직입니다.
-        </h3>
-
-        <div class="vision-list">
-          <div class="vision-item">
-            <div class="vision-icon">1</div>
-            <div>
-              <strong>신뢰를 먼저 쌓습니다.</strong>
-              <p>대표와 운영진이 얼굴을 공개하고, 지역사회 활동과 실적 중심으로 회사를 운영합니다.</p>
-            </div>
-          </div>
-
-          <div class="vision-item">
-            <div class="vision-icon">2</div>
-            <div>
-              <strong>실행으로 증명합니다.</strong>
-              <p>광고만 제안하는 것이 아니라, 실제 유입·문의·판매·개발·컨설팅까지 실행합니다.</p>
-            </div>
-          </div>
-
-          <div class="vision-item">
-            <div class="vision-icon">3</div>
-            <div>
-              <strong>전국 단위 확장을 목표로 합니다.</strong>
-              <p>강원특별자치도 원주를 기반으로 시작했지만, 온라인 프랜차이즈 구조와 전국 지사·MOU 확장을 준비하고 있습니다.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box box-dark box-pad reveal">
-        <h3>왜 원주에서 시작했는가</h3>
-        <p>
-          많은 분들이 왜 사무실이 강남이 아니냐고 묻습니다.  
-          깐부파트너스는 강남 빌딩숲 안에서 얼굴을 숨기고 일하는 방식보다,  
-          <strong>강원특별자치도 원주에서 얼굴을 공개하고 신뢰를 쌓는 방식</strong>을 택했습니다.
-        </p>
-        <p>
-          불필요한 고정비를 줄이고, 그만큼 가격과 실행력에 투자합니다.  
-          지역사회 활동을 통해 검증받고, 그 신뢰를 바탕으로 전국을 대상으로 움직입니다.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 브랜드 요약 -->
-<section class="section" id="brands">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">브랜드 요약</span>
-      <h2 class="section-title">브랜드가 많은 이유는 단순합니다.<br>사업에 필요한 걸 직접 하기 때문입니다.</h2>
-      <p class="section-desc">
-        각 브랜드는 따로 노는 이름이 아닙니다.  
-        마케팅, AI, 컨설팅, 자동차, 렌탈, 태양광, 부업 플랫폼까지  
-        실제 고객의 문제를 해결하기 위해 연결된 구조입니다.
-      </p>
-    </div>
-
-    <div class="brand-grid">
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">마케팅</div>
-        </div>
-        <h3>깐부마케팅</h3>
-        <p>트래픽·리뷰 중심의 마케팅 실행사입니다. 대행사, 중소기업, 병원을 대상으로 실행 중심 마케팅을 진행합니다.</p>
-        <span class="tag-line">광고 설명보다, 실제 유입이 먼저입니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">AI 개발</div>
-        </div>
-        <h3>깐부AI솔루션</h3>
-        <p>홈페이지 제작, AI 프로그램 제작, 자동화 도구 개발 등 AI를 활용한 실전형 솔루션을 만드는 브랜드입니다.</p>
-        <span class="tag-line">사업에 바로 쓰는 AI를 만듭니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">경영컨설팅</div>
-        </div>
-        <h3>KPFC</h3>
-        <p>기업절세, 경영자문, 자금전략, 기업마케팅을 다루는 경영컨설팅 플랫폼입니다.</p>
-        <span class="tag-line">자금만 보는 게 아니라, 회사 전체 구조를 봅니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">신차 플랫폼</div>
-        </div>
-        <h3>PICKCAR</h3>
-        <p>국산차·수입차 전차종 신차 판매, 장기렌터카, 리스, 할부를 비교해 제공하는 신차 종합 판매 플랫폼입니다.</p>
-        <span class="tag-line">같은 차라도, 가져오는 구조가 다르면 가격이 달라집니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">보험</div>
-        </div>
-        <h3>깐부다이렉트</h3>
-        <p>자동차 다이렉트 보험 중심의 플랫폼입니다. 복잡한 보험 비교를 더 단순하게 정리합니다.</p>
-        <span class="tag-line">복잡한 걸 쉽게 정리하는 방향입니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">통신</div>
-        </div>
-        <h3>깐부폰</h3>
-        <p>휴대폰 판매 및 창업 모델을 운영하는 브랜드입니다. 온라인 기반으로 확장 가능한 구조를 만듭니다.</p>
-        <span class="tag-line">고정비보다 구조가 중요합니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">렌탈</div>
-        </div>
-        <h3>깐부렌탈</h3>
-        <p>생활가전 렌탈 중심의 브랜드입니다. 정수기, 공기청정기, 비데 등 생활 필수 제품을 기반으로 운영합니다.</p>
-        <span class="tag-line">한 번 판매가 아니라 누적 구조를 봅니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">태양광</div>
-        </div>
-        <h3>한국태양광연금협회</h3>
-        <p>태양광을 장기 수익 구조로 연결하는 브랜드입니다. 지붕 활용과 장기 수익 모델에 초점을 맞춥니다.</p>
-        <span class="tag-line">설치가 아니라 구조를 봅니다.</span>
-      </div>
-
-      <div class="brand-card reveal">
-        <div class="brand-card-top">
-          <div class="brand-logo-slot">로고</div>
-          <div class="brand-badge">플랫폼</div>
-        </div>
-        <h3>한국부업인협회</h3>
-        <p>현실적인 부업·창업 기회를 연결하는 플랫폼 성격의 브랜드입니다.</p>
-        <span class="tag-line">뜨는 말보다, 실제 가능한 구조를 다룹니다.</span>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 서비스 요약 -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">서비스 요약</span>
-      <h2 class="section-title">
-        필요한 걸 따로 찾지 마세요.<br>
-        사업에 필요한 실행을 한 번에 연결합니다.
-      </h2>
-      <p class="section-desc">
-        깐부파트너스는 보기 좋은 설명보다,  
-        <strong>실제 현장에서 바로 쓰는 서비스</strong>를 기준으로 움직입니다.  
-        마케팅, AI, 경영컨설팅, 자동차, 렌탈, 강의까지  
-        각 브랜드가 맡은 역할이 분명하게 나뉘어 있습니다.
-      </p>
-    </div>
-
-    <div class="service-summary-grid">
-
-      <!-- 깐부마케팅 -->
-      <div class="service-row reveal">
-        <div class="service-media">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80" alt="마케팅 회의 이미지">
-          <div class="service-media-label">깐부마케팅 | 트래픽 · 리뷰 실행</div>
-        </div>
-        <div class="service-copy blue">
-          <div class="service-kicker">대행사 · 병원 · 중소기업 대상</div>
-          <h3>광고 설명보다<br>유입 결과가 먼저입니다.</h3>
-          <p>
-            깐부마케팅은 트래픽과 리뷰 중심으로 움직이는 마케팅 실행사입니다.  
-            보여주기식 보고서보다 <strong>실제로 고객이 들어오게 만드는 구조</strong>에 집중합니다.  
-            대행사 백업 파트너, 병원 마케팅, 중소기업 실행 마케팅에 강점이 있습니다.
-          </p>
-
-          <div class="service-infographic">
-            <div class="service-step">
-              <strong>노출</strong>
-              <span>검색과 보이기</span>
-            </div>
-            <div class="service-step">
-              <strong>유입</strong>
-              <span>실제 방문 유도</span>
-            </div>
-            <div class="service-step">
-              <strong>신뢰</strong>
-              <span>리뷰와 반응 확보</span>
-            </div>
-            <div class="service-step">
-              <strong>문의</strong>
-              <span>상담 전환</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 깐부AI솔루션 -->
-      <div class="service-row reveal">
-        <div class="service-media">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="AI 개발 이미지">
-          <div class="service-media-label">깐부AI솔루션 | 홈페이지 · AI 개발</div>
-        </div>
-        <div class="service-copy violet">
-          <div class="service-kicker">AI 개발자 이종혁 이사 총괄</div>
-          <h3>AI는 멋있어 보이는 게 아니라<br>일을 줄여줘야 합니다.</h3>
-          <p>
-            깐부AI솔루션은 홈페이지 제작, AI 프로그램 개발, 자동화 시스템 구축을 진행합니다.  
-            복잡한 기술 설명보다, <strong>사업에 바로 붙일 수 있는 도구</strong>를 만드는 데 집중합니다.  
-            사람이 반복하던 일을 줄이고, 속도와 관리 효율을 올리는 방향으로 설계합니다.
-          </p>
-
-          <div class="service-feature-list">
-            <div class="service-feature">홈페이지 제작</div>
-            <div class="service-feature">AI 프로그램 개발</div>
-            <div class="service-feature">자동화 시스템 제작</div>
-            <div class="service-feature">실무형 솔루션 설계</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- KPFC -->
-      <div class="service-row reveal">
-        <div class="service-media">
-          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1400&q=80" alt="경영 컨설팅 이미지">
-          <div class="service-media-label">KPFC | 경영컨설팅 플랫폼</div>
-        </div>
-        <div class="service-copy navy">
-          <div class="service-kicker">기업절세 · 경영자문 · 자금전략 · 기업마케팅</div>
-          <h3>돈만 보는 게 아니라<br>회사의 구조를 같이 봅니다.</h3>
-          <p>
-            KPFC는 단순 자금 상담이 아니라,  
-            기업절세, 자금전략, 경영자문, 기업마케팅까지 함께 보는 경영컨설팅 플랫폼입니다.  
-            당장 필요한 한 가지보다, <strong>회사가 앞으로 어떻게 움직여야 하는지</strong>를 같이 정리합니다.
-          </p>
-
-          <div class="service-feature-list">
-            <div class="service-feature">기업절세 전략</div>
-            <div class="service-feature">경영 자문</div>
-            <div class="service-feature">자금 전략 수립</div>
-            <div class="service-feature">기업 홍보 방향 정리</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PICKCAR -->
-      <div class="service-row reveal">
-        <div class="service-media">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" alt="자동차 이미지">
-          <div class="service-media-label">PICKCAR | 신차 종합 판매 플랫폼</div>
-        </div>
-        <div class="service-copy gray">
-          <div class="service-kicker">국산차 · 수입차 · 전차종 대응</div>
-          <h3>같은 차라도<br>가져오는 구조가 다르면 가격이 달라집니다.</h3>
-          <p>
-            PICKCAR는 국산차와 수입차 전차종을 대상으로  
-            신차 판매, 신차 장기렌터카, 신차 리스, 신차 할부를 다루는 플랫폼입니다.  
-            대리점 직원보다 더 저렴한 구조를 만들기 위해  
-            <strong>B2B 다이렉트 구조</strong>로 접근하고 있습니다.
-          </p>
-          <p>
-            업계 평균 5~8% 수준의 리스피 구조와 다르게,  
-            <strong>3% 마진을 공개</strong>하며 전국 최저가 수준을 목표로 판매합니다.
-          </p>
-
-          <div class="service-infographic">
-            <div class="service-step">
-              <strong>비교</strong>
-              <span>국산차·수입차</span>
-            </div>
-            <div class="service-step">
-              <strong>선택</strong>
-              <span>렌트·리스·할부</span>
-            </div>
-            <div class="service-step">
-              <strong>구조</strong>
-              <span>B2B 직거래</span>
-            </div>
-            <div class="service-step">
-              <strong>가격</strong>
-              <span>3% 마진 공개</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 나머지 브랜드 묶음 -->
-      <div class="service-row reveal">
-        <div class="service-media">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80" alt="비즈니스 서비스 이미지">
-          <div class="service-media-label">운영 브랜드 요약</div>
-        </div>
-        <div class="service-copy mint">
-          <div class="service-kicker">보험 · 통신 · 렌탈 · 태양광 · 부업 플랫폼</div>
-          <h3>브랜드가 많아 보이는 이유는<br>현장에서 필요한 게 많기 때문입니다.</h3>
-          <p>
-            깐부다이렉트는 자동차 다이렉트 보험 플랫폼,  
-            깐부폰은 휴대폰 판매 및 창업 구조,  
-            깐부렌탈은 생활가전 렌탈 구조,  
-            한국태양광연금협회는 장기 수익형 태양광 모델,  
-            한국부업인협회는 현실형 부업 정보를 다루는 방향으로 운영됩니다.
-          </p>
-
-          <div class="service-feature-list">
-            <div class="service-feature">깐부다이렉트 · 자동차 보험</div>
-            <div class="service-feature">깐부폰 · 휴대폰 판매 구조</div>
-            <div class="service-feature">깐부렌탈 · 생활가전 렌탈</div>
-            <div class="service-feature">태양광연금협회 · 장기 수익 구조</div>
-            <div class="service-feature">한국부업인협회 · 현실형 부업 정보</div>
-            <div class="service-feature">세일즈 강의 · AI 강의 진행 가능</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- 운영진 소개 -->
-<section class="section" id="team">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">운영진 소개</span>
-      <h2 class="section-title">
-        얼굴을 공개하고 운영합니다.<br>
-        역할도 분명하게 나눠서 움직입니다.
-      </h2>
-      <p class="section-desc">
-        깐부파트너스는 이름만 걸어놓은 조직이 아니라,  
-        운영진이 직접 전면에서 움직이는 구조입니다.  
-        <strong>이종현 대표는 사업·세일즈·전략</strong>,  
-        <strong>이종혁 이사는 AI 개발·수도권 파트</strong>를 맡고 있습니다.
-      </p>
-    </div>
-
-    <div class="executives-grid">
-
-      <!-- 이종현 -->
-      <div class="executive-card reveal">
-        <div class="executive-photo">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80" alt="이종현 대표 사진 자리">
-          <div class="executive-name-badge">
-            <strong>이종현</strong>
-            <span>대표 · 사업전략 · 세일즈 · 마케팅</span>
-          </div>
-        </div>
-        <div class="executive-body">
-          <p class="executive-intro">
-            세 아이의 아빠이자,  
-            원주청년소상공인협회 사무국장,  
-            국제로타리 3730지구 원주미래로타리클럽 총무(차기회장)로 활동하고 있습니다.  
-            사업 현장, 지역사회, 세일즈와 마케팅 실무를 직접 뛰는 실행형 사업가입니다.
-          </p>
-
-          <div class="executive-detail-grid">
-            <div class="executive-detail">
-              <strong>주요 역할</strong>
-              <span>사업전략 수립, 세일즈 설계, 마케팅 기획, 브랜드 운영 총괄</span>
-            </div>
-            <div class="executive-detail">
-              <strong>대외 활동</strong>
-              <span>지역사회 활동, 협회 운영, 강의 및 사업 네트워크 구축</span>
-            </div>
-            <div class="executive-detail">
-              <strong>강의 가능</strong>
-              <span>세일즈 강의, 사업전략 강의, 마케팅 강의, AI 관련 강의</span>
-            </div>
-          </div>
-
-          <div class="executive-links">
-            <a href="#" class="link-chip">네이버 인물검색 연결</a>
-            <a href="#" class="link-chip">유튜브 채널 연결</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 이종혁 -->
-      <div class="executive-card reveal">
-        <div class="executive-photo">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80" alt="이종혁 이사 사진 자리">
-          <div class="executive-name-badge">
-            <strong>이종혁</strong>
-            <span>이사 · AI 개발 · 수도권 파트</span>
-          </div>
-        </div>
-        <div class="executive-body">
-          <p class="executive-intro">
-            깐부AI솔루션을 중심으로 홈페이지 제작, AI 프로그램 개발, 자동화 솔루션 설계를 맡고 있습니다.  
-            기술을 어렵게 설명하는 방향보다,  
-            현장에서 바로 쓰이는 실전형 개발에 초점을 맞추고 있습니다.
-          </p>
-
-          <div class="executive-detail-grid">
-            <div class="executive-detail">
-              <strong>주요 역할</strong>
-              <span>AI 프로그램 개발, 자동화 설계, 홈페이지 제작, 기술 파트 총괄</span>
-            </div>
-            <div class="executive-detail">
-              <strong>담당 영역</strong>
-              <span>수도권 파트 운영, 개발 프로젝트 관리, 기술 기반 서비스 구축</span>
-            </div>
-            <div class="executive-detail">
-              <strong>강의 가능</strong>
-              <span>AI 활용 강의, 홈페이지 및 자동화 실무 강의</span>
-            </div>
-          </div>
-
-          <div class="executive-links">
-            <a href="#" class="link-chip">AI 포트폴리오 연결</a>
-            <a href="#" class="link-chip">문의 연결</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- 신뢰 -->
-<section class="section section-dark" id="trust">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">신뢰</span>
-      <h2 class="section-title">
-        숨기지 않고 보여줄 수 있는 것들로<br>
-        신뢰를 쌓고 있습니다.
-      </h2>
-      <p class="section-desc">
-        강남에 있다는 말보다 중요한 건,  
-        <strong>누가 운영하는지, 어떤 활동을 하는지, 어디서 검증됐는지</strong>입니다.  
-        깐부파트너스는 지역사회 활동, 방송 출연, 공개된 운영진을 중심으로 신뢰를 쌓고 있습니다.
-      </p>
-    </div>
-
-    <div class="trust-grid">
-      <div class="trust-media-box reveal">
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="이데일리TV 출연 영상" allowfullscreen></iframe>
-        </div>
-        <div class="trust-caption">
-          <strong>2026년 3월, 이데일리TV 경제방송 출연</strong>
-          <p>
-            이종현 대표는 2026년 3월 경제방송 이데일리TV에 출연해  
-            사업자들에게 도움이 되는 실전 팁과 방향을 전달했습니다.  
-            이 자리는 단순 홍보보다, 실제 사업자를 위한 정보 전달의 자리였습니다.
-          </p>
-        </div>
-      </div>
-
-      <div class="trust-photo-grid">
-        <div class="trust-photo-card reveal">
-          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="지역사회 활동 이미지">
-          <div class="caption">
-            원주 기반 지역사회 활동과 대외 협력을 통해  
-            얼굴을 공개하고 신뢰를 쌓는 운영 방식을 유지하고 있습니다.
-          </div>
-        </div>
-
-        <div class="trust-photo-card reveal">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80" alt="가족 사진 자리">
-          <div class="caption">
-            대표 가족사진이나 실제 활동 사진을 넣으면  
-            홈페이지가 훨씬 살아나고, 사람 냄새 나는 신뢰가 생깁니다.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 수익구조 -->
-<section class="section" id="revenue">
-  <div class="container">
-    <div class="title-wrap reveal">
-      <span class="eyebrow">수익구조</span>
-      <h2 class="section-title">
-        한 번 판매로 끝나는 구조보다<br>
-        쌓이는 구조를 먼저 봅니다.
-      </h2>
-      <p class="section-desc">
-        브랜드마다 방식은 다르지만,  
-        깐부파트너스가 보는 기준은 하나입니다.  
-        <strong>지속 가능한 구조인가, 반복 가능한 구조인가</strong>를 먼저 봅니다.
-      </p>
-    </div>
-
-    <div class="revenue-grid">
-      <div class="revenue-box reveal">
-        <h3>브랜드별 수익 흐름 예시</h3>
-        <p>
-          깐부폰은 건당 수익 구조,  
-          깐부렌탈은 누적 수익 구조,  
-          PICKCAR는 고단가 구조,  
-          마케팅과 AI는 프로젝트형 구조로 이해하면 쉽습니다.
-        </p>
-
-        <div class="revenue-steps">
-          <div class="revenue-step">
-            <div class="revenue-value">
-              <strong>깐부폰</strong>
-              <span>건당 수익형</span>
-            </div>
-            <div class="revenue-desc">
-              <strong>한 건 한 건의 수익이 분명한 구조</strong>
-              <p>초보자도 이해하기 쉽고, 결과가 눈에 보이는 방식입니다.</p>
-            </div>
-          </div>
-
-          <div class="revenue-step">
-            <div class="revenue-value">
-              <strong>깐부렌탈</strong>
-              <span>누적 수익형</span>
-            </div>
-            <div class="revenue-desc">
-              <strong>쌓일수록 강해지는 구조</strong>
-              <p>처음은 작아 보여도 시간이 지나면 차이가 커집니다.</p>
-            </div>
-          </div>
-
-          <div class="revenue-step">
-            <div class="revenue-value">
-              <strong>PICKCAR</strong>
-              <span>고수익형</span>
-            </div>
-            <div class="revenue-desc">
-              <strong>단가가 큰 만큼 설득 구조가 중요합니다.</strong>
-              <p>같은 차라도 비교 기준과 가져오는 구조에 따라 반응이 달라집니다.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="revenue-graph reveal">
-        <h3>쌓이는 구조를 한눈에 보면 이렇게 보입니다</h3>
-        <p>
-          처음부터 크게 터지는 구조보다,  
-          한 건씩 쌓이면서 안정적으로 커지는 방향을 더 현실적으로 봅니다.
-        </p>
-
-        <div class="bars">
-          <div class="bar-col">
-            <div class="bar-track">
-              <div class="bar-fill" style="height: 32%;"></div>
-            </div>
-            <div class="bar-value">1단계</div>
-            <div class="bar-label">시작 구간</div>
-          </div>
-
-          <div class="bar-col">
-            <div class="bar-track">
-              <div class="bar-fill" style="height: 52%;"></div>
-            </div>
-            <div class="bar-value">2단계</div>
-            <div class="bar-label">누적 시작</div>
-          </div>
-
-          <div class="bar-col">
-            <div class="bar-track">
-              <div class="bar-fill" style="height: 72%;"></div>
-            </div>
-            <div class="bar-value">3단계</div>
-            <div class="bar-label">안정화 구간</div>
-          </div>
-
-          <div class="bar-col">
-            <div class="bar-track">
-              <div class="bar-fill" style="height: 92%;"></div>
-            </div>
-            <div class="bar-value">4단계</div>
-            <div class="bar-label">확장 구간</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ 미리보기 -->
-<section class="section section-dark faq-preview" id="faq">
-  <div class="container faq-preview-grid">
-    <div class="faq-left reveal">
-      <span class="eyebrow">FAQ 미리보기</span>
-      <h2 class="section-title">
-        다들 비슷한 지점에서<br>
-        한 번씩 멈춥니다.
-      </h2>
-      <p class="section-desc">
-        회사, 브랜드, 수익구조, 창업, 마케팅, KPFC, 태양광 등  
-        분야가 많다 보니 궁금한 지점도 달라집니다.  
-        그래서 FAQ는 브랜드별·주제별로 세부 메뉴를 나눠서 운영하는 구조가 맞습니다.
-      </p>
-
-      <div class="faq-category-row">
-        <div class="faq-cat">회사</div>
-        <div class="faq-cat">브랜드</div>
-        <div class="faq-cat">수익구조</div>
-        <div class="faq-cat">창업</div>
-        <div class="faq-cat">마케팅</div>
-        <div class="faq-cat">KPFC</div>
-        <div class="faq-cat">태양광</div>
-      </div>
-    </div>
-
-    <div class="faq-items reveal">
-      <div class="faq-card">
-        <strong>브랜드가 많은데, 한 회사에서 다 하는 게 맞나요?</strong>
-        <p>
-          이름만 많은 구조가 아니라, 실제 현장에서 필요했던 영역들을 직접 분리해 운영한 결과입니다.  
-          그래서 각 브랜드의 역할이 분명합니다.
-        </p>
-      </div>
-
-      <div class="faq-card">
-        <strong>왜 강남이 아니라 원주에서 운영하나요?</strong>
-        <p>
-          보여주기식 주소보다, 공개된 얼굴과 지역사회 활동으로 신뢰를 쌓는 방향을 택했기 때문입니다.  
-          그리고 불필요한 비용을 줄여 합리적인 가격 구조를 만들 수 있습니다.
-        </p>
-      </div>
-
-      <div class="faq-card">
-        <strong>PICKCAR가 왜 더 저렴할 수 있나요?</strong>
-        <p>
-          가져오는 구조 자체가 다르기 때문입니다.  
-          B2B 다이렉트 구조와 공개된 마진 기준으로 접근하고 있습니다.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 문의 CTA -->
-<section class="section" id="contact">
-  <div class="container cta-wrap">
-    <div class="cta-copy reveal">
-      <span class="eyebrow">문의 CTA</span>
-      <h3>
-        설명 길게 듣기 전에<br>
-        필요한 것부터 체크하시면 됩니다.
-      </h3>
-      <p>
-        문의한다고 바로 결정하는 구조가 아닙니다.  
-        지금 필요한 브랜드나 서비스가 뭔지 먼저 체크하고,  
-        가능한 시간대를 남기면 그 기준으로 연결하면 됩니다.
-      </p>
-
-      <ul class="cta-bullets">
-        <li>
-          <span>✔</span>
-          <span>브랜드별 문의 항목을 체크형으로 분리</span>
-        </li>
-        <li>
-          <span>✔</span>
-          <span>세일즈 강의, AI 강의 문의도 함께 가능</span>
-        </li>
-        <li>
-          <span>✔</span>
-          <span>통화 가능 시간은 3시간 단위 선택</span>
-        </li>
-        <li>
-          <span>✔</span>
-          <span>개인정보 활용 동의 체크 안 하면 제출 불가</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="contact-box reveal">
-      <div class="contact-head">
-        <h3>문의 남기기</h3>
-        <p>
-          아래 항목을 체크하고 이름, 연락처, 통화 가능 시간을 남겨주세요.  
-          실제 문의 연결을 고려한 기본 구조입니다.
-        </p>
-      </div>
-
-      <form class="contact-form">
-        <div class="field full">
-          <label>문의 분야 선택</label>
-          <div class="check-grid">
-            <div class="check-item"><input type="checkbox" id="c1"><label for="c1">깐부마케팅</label></div>
-            <div class="check-item"><input type="checkbox" id="c2"><label for="c2">깐부AI솔루션</label></div>
-            <div class="check-item"><input type="checkbox" id="c3"><label for="c3">KPFC</label></div>
-            <div class="check-item"><input type="checkbox" id="c4"><label for="c4">PICKCAR</label></div>
-            <div class="check-item"><input type="checkbox" id="c5"><label for="c5">깐부다이렉트</label></div>
-            <div class="check-item"><input type="checkbox" id="c6"><label for="c6">깐부폰</label></div>
-            <div class="check-item"><input type="checkbox" id="c7"><label for="c7">깐부렌탈</label></div>
-            <div class="check-item"><input type="checkbox" id="c8"><label for="c8">한국태양광연금협회</label></div>
-            <div class="check-item"><input type="checkbox" id="c9"><label for="c9">한국부업인협회</label></div>
-            <div class="check-item"><input type="checkbox" id="c10"><label for="c10">세일즈 강의</label></div>
-            <div class="check-item"><input type="checkbox" id="c11"><label for="c11">AI 강의</label></div>
-          </div>
-        </div>
-
-        <div class="field-grid">
-          <div class="field">
-            <label for="name">이름</label>
-            <input type="text" id="name" placeholder="이름을 입력해주세요">
-          </div>
-
-          <div class="field">
-            <label for="phone">연락처</label>
-            <input type="tel" id="phone" placeholder="연락처를 입력해주세요">
-          </div>
-        </div>
-
-        <div class="field full">
-          <label for="time">통화 가능 시간</label>
-          <select id="time">
-            <option>09:00 ~ 12:00</option>
-            <option>12:00 ~ 15:00</option>
-            <option>15:00 ~ 18:00</option>
-            <option>18:00 ~ 21:00</option>
-          </select>
-        </div>
-
-        <div class="agreement-row">
-          <input type="checkbox" id="agree" checked>
-          <label for="agree">
-            <strong>개인정보 활용에 동의합니다.</strong><br>
-            문의 접수 및 상담 연결을 위한 최소한의 정보 활용에 동의해야 문의가 접수됩니다.
-          </label>
-        </div>
-
-        <p class="form-note">
-          실제 운영 시에는 폼 전송 기능, 카카오 링크, 자동 문자 발송 등을 추가 연결하면 됩니다.
-        </p>
-
-        <div class="submit-row">
-          <div class="left-text">문의 내용은 브랜드별로 구분해 접수하는 방식이 좋습니다.</div>
-          <button type="submit" class="btn btn-primary">문의 남기기</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- 푸터 -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>깐부파트너스</h3>
-      <p>
-        마케팅 실행, AI 솔루션, 경영컨설팅, 신차 플랫폼, 통신·렌탈·태양광·부업 구조를 운영하는  
-        실행 중심 비즈니스 플랫폼입니다.
-      </p>
-      <div class="footer-list">
-        <div>대표 : 이종현</div>
-        <div>기반 지역 : 강원특별자치도 원주</div>
-        <div>운영 방향 : 공개된 운영진 · 지역사회 활동 · 전국 단위 확장</div>
-      </div>
-    </div>
-
-    <div>
-      <h3>연결 메뉴</h3>
-      <div class="footer-list">
-        <a href="#vision">회사 비전 소개</a>
-        <a href="#brands">브랜드 요약</a>
-        <a href="#services">서비스 요약</a>
-        <a href="#team">운영진 소개</a>
-        <a href="#trust">신뢰</a>
-        <a href="#revenue">수익구조</a>
-        <a href="#faq">FAQ 미리보기</a>
-        <a href="#contact">문의 CTA</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- 우측 하단 고정 버튼 -->
-<div class="floating-actions">
-  <a href="#" class="floating-btn kakao">카톡 문의</a>
-  <a href="#contact" class="floating-btn contact">문의하기</a>
-</div>
