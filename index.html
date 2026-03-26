@@ -1916,4 +1916,494 @@
     }
 
     .faq-left p {
-      color: rgba(255, 255, 255,
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .faq-category-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .faq-cat {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .faq-items {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-card {
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .faq-card strong {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .faq-card p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .cta-copy {
+      padding: 30px;
+      border-radius: 24px;
+      background: #f4f8ff;
+    }
+
+    .cta-copy h3 {
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1.3;
+    }
+
+    .cta-copy p {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .contact-box {
+      border-radius: 24px;
+      background: #fff;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      height: 50px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      padding: 0 12px;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 8px;
+    }
+
+    .check-item label {
+      display:block;
+      padding:10px;
+      background:#f3f4f6;
+      border-radius:10px;
+      text-align:center;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .submit-btn {
+      width:100%;
+      height:54px;
+      background:#2563EB;
+      color:#fff;
+      border:none;
+      border-radius:14px;
+      font-weight:900;
+      margin-top:12px;
+    }
+
+    /* 플로팅 버튼 */
+    .floating {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      z-index:999;
+    }
+
+    .kakao-btn {
+      background:#FEE500;
+      color:#111;
+      padding:14px;
+      border-radius:14px;
+      font-weight:900;
+      text-align:center;
+    }
+
+    .contact-btn {
+      background:#111;
+      color:#fff;
+      padding:14px;
+      border-radius:14px;
+      font-weight:900;
+      text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- FAQ -->
+<section class="faq-preview section-dark">
+  <div class="container faq-preview-grid">
+    
+    <div class="faq-left">
+      <h2>이미 여기서 고민합니다</h2>
+      <p>상담 전에 대부분 여기서 막힙니다. 미리 답드립니다.</p>
+
+      <div class="faq-category-row">
+        <div class="faq-cat">회사</div>
+        <div class="faq-cat">브랜드</div>
+        <div class="faq-cat">수익</div>
+        <div class="faq-cat">창업</div>
+        <div class="faq-cat">마케팅</div>
+        <div class="faq-cat">KPFC</div>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="faq-card">
+        <strong>이거 진짜 가능한가요?</strong>
+        <p>이미 하고 있는 사람들이 계속 가져가는 구조입니다.</p>
+      </div>
+
+      <div class="faq-card">
+        <strong>초보도 할 수 있나요?</strong>
+        <p>설명보다 구조가 중요합니다. 따라가면 됩니다.</p>
+      </div>
+
+      <div class="faq-card">
+        <strong>시간 많이 써야 하나요?</strong>
+        <p>풀타임 아닙니다. 구조 안에서 움직이는 정도입니다.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container cta-wrap">
+
+    <div class="cta-copy">
+      <h3>결정하지 마세요.<br>구조만 보세요.</h3>
+      <p>지금 판단 안 해도 됩니다.<br>구조 이해하면 방향은 나옵니다.</p>
+    </div>
+
+    <div class="contact-box">
+      <form>
+
+        <div class="check-grid">
+          <div class="check-item"><label>깐부폰</label></div>
+          <div class="check-item"><label>깐부렌탈</label></div>
+          <div class="check-item"><label>PICKCAR</label></div>
+          <div class="check-item"><label>KPFC</label></div>
+          <div class="check-item"><label>마케팅</label></div>
+          <div class="check-item"><label>AI</label></div>
+        </div>
+
+        <div class="field">
+          <input type="text" placeholder="이름">
+        </div>
+
+        <div class="field">
+          <input type="tel" placeholder="연락처">
+        </div>
+
+        <div class="field">
+          <select>
+            <option>09~12</option>
+            <option>12~15</option>
+            <option>15~18</option>
+            <option>18~21</option>
+          </select>
+        </div>
+
+        <button class="submit-btn">상담 신청</button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- 플로팅 버튼 -->
+<div class="floating">
+  <a href="#" class="kakao-btn">카카오 문의</a>
+  <a href="#" class="contact-btn">문의하기</a>
+</div>
+
+</body>
+</html>
+
+<!-- 히어로 섹션 -->
+<section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-business-handshake-5171/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="hero-fallback"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy reveal show">
+      <div class="hero-badge-row">
+        <span class="hero-badge">실행 중심 비즈니스 플랫폼</span>
+        <span class="hero-badge">마케팅 · AI · 경영컨설팅 · 신차플랫폼</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line">광고만 하는 회사 아닙니다.</span>
+        <span class="line highlight">사업에 필요한 실행을 직접 하는 회사입니다.</span>
+      </h1>
+
+      <p class="hero-desc">
+        깐부파트너스는 <strong>깐부마케팅, 깐부AI솔루션, KPFC, PICKCAR</strong>를 중심으로  
+        마케팅 실행, AI 프로그램 개발, 경영컨설팅, 신차 판매 플랫폼까지  
+        사업에 필요한 핵심 영역을 직접 운영하고 있습니다.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="#services" class="btn btn-primary">서비스 보기</a>
+        <a href="#contact" class="btn btn-ghost">문의하기</a>
+      </div>
+
+      <div class="hero-mini-grid">
+        <div class="hero-mini-card">
+          <strong>깐부마케팅</strong>
+          <span>트래픽·리뷰 중심 마케팅 실행</span>
+        </div>
+        <div class="hero-mini-card">
+          <strong>깐부AI솔루션</strong>
+          <span>홈페이지·AI 프로그램·자동화 제작</span>
+        </div>
+        <div class="hero-mini-card">
+          <strong>PICKCAR</strong>
+          <span>국산차·수입차 신차 종합 판매 플랫폼</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-panel reveal show">
+      <div class="hero-panel-top">
+        <div>
+          <div class="hero-panel-title">한눈에 보는 깐부파트너스</div>
+        </div>
+        <div class="hero-panel-chip">전국 대응</div>
+      </div>
+
+      <div class="hero-facts">
+        <div class="hero-fact">
+          <div>✔</div>
+          <div>
+            <strong>브랜드를 따로따로 운영하는 게 아닙니다.</strong>
+            <p>마케팅, AI, 컨설팅, 자동차, 렌탈을 하나의 실행 구조로 연결해서 운영합니다.</p>
+          </div>
+        </div>
+
+        <div class="hero-fact">
+          <div>✔</div>
+          <div>
+            <strong>강남이 아니라 원주에서 얼굴 공개하고 운영합니다.</strong>
+            <p>지역사회 활동과 공개된 운영진 중심으로 신뢰를 쌓고, 전국 단위로 사업을 확장합니다.</p>
+          </div>
+        </div>
+
+        <div class="hero-fact">
+          <div>✔</div>
+          <div>
+            <strong>형제가 역할을 나눠 직접 운영합니다.</strong>
+            <p>이종현 대표는 사업·세일즈·전략, 이종혁 이사는 AI 개발·수도권 파트를 맡고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 회사 비전 소개 -->
+<section class="section" id="vision">
+  <div class="container">
+    <div class="title-wrap reveal">
+      <span class="eyebrow">회사 비전 소개</span>
+      <h2 class="section-title">겉으로 커 보이는 회사보다<br>실제로 움직이는 회사를 만듭니다.</h2>
+      <p class="section-desc">
+        깐부파트너스는 보기 좋은 설명보다 <strong>실행 구조</strong>를 먼저 만듭니다.  
+        보여주기식 조직이 아니라, 고객이 실제로 필요한 영역을 빠르게 연결하고 실행하는 구조를 지향합니다.
+      </p>
+    </div>
+
+    <div class="vision-grid">
+      <div class="box box-pad reveal">
+        <h3 class="vision-lead">
+          신뢰, 실행, 확장.<br>
+          이 3가지를 기준으로 움직입니다.
+        </h3>
+
+        <div class="vision-list">
+          <div class="vision-item">
+            <div class="vision-icon">1</div>
+            <div>
+              <strong>신뢰를 먼저 쌓습니다.</strong>
+              <p>대표와 운영진이 얼굴을 공개하고, 지역사회 활동과 실적 중심으로 회사를 운영합니다.</p>
+            </div>
+          </div>
+
+          <div class="vision-item">
+            <div class="vision-icon">2</div>
+            <div>
+              <strong>실행으로 증명합니다.</strong>
+              <p>광고만 제안하는 것이 아니라, 실제 유입·문의·판매·개발·컨설팅까지 실행합니다.</p>
+            </div>
+          </div>
+
+          <div class="vision-item">
+            <div class="vision-icon">3</div>
+            <div>
+              <strong>전국 단위 확장을 목표로 합니다.</strong>
+              <p>강원특별자치도 원주를 기반으로 시작했지만, 온라인 프랜차이즈 구조와 전국 지사·MOU 확장을 준비하고 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box box-dark box-pad reveal">
+        <h3>왜 원주에서 시작했는가</h3>
+        <p>
+          많은 분들이 왜 사무실이 강남이 아니냐고 묻습니다.  
+          깐부파트너스는 강남 빌딩숲 안에서 얼굴을 숨기고 일하는 방식보다,  
+          <strong>강원특별자치도 원주에서 얼굴을 공개하고 신뢰를 쌓는 방식</strong>을 택했습니다.
+        </p>
+        <p>
+          불필요한 고정비를 줄이고, 그만큼 가격과 실행력에 투자합니다.  
+          지역사회 활동을 통해 검증받고, 그 신뢰를 바탕으로 전국을 대상으로 움직입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 브랜드 요약 -->
+<section class="section" id="brands">
+  <div class="container">
+    <div class="title-wrap reveal">
+      <span class="eyebrow">브랜드 요약</span>
+      <h2 class="section-title">브랜드가 많은 이유는 단순합니다.<br>사업에 필요한 걸 직접 하기 때문입니다.</h2>
+      <p class="section-desc">
+        각 브랜드는 따로 노는 이름이 아닙니다.  
+        마케팅, AI, 컨설팅, 자동차, 렌탈, 태양광, 부업 플랫폼까지  
+        실제 고객의 문제를 해결하기 위해 연결된 구조입니다.
+      </p>
+    </div>
+
+    <div class="brand-grid">
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">마케팅</div>
+        </div>
+        <h3>깐부마케팅</h3>
+        <p>트래픽·리뷰 중심의 마케팅 실행사입니다. 대행사, 중소기업, 병원을 대상으로 실행 중심 마케팅을 진행합니다.</p>
+        <span class="tag-line">광고 설명보다, 실제 유입이 먼저입니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">AI 개발</div>
+        </div>
+        <h3>깐부AI솔루션</h3>
+        <p>홈페이지 제작, AI 프로그램 제작, 자동화 도구 개발 등 AI를 활용한 실전형 솔루션을 만드는 브랜드입니다.</p>
+        <span class="tag-line">사업에 바로 쓰는 AI를 만듭니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">경영컨설팅</div>
+        </div>
+        <h3>KPFC</h3>
+        <p>기업절세, 경영자문, 자금전략, 기업마케팅을 다루는 경영컨설팅 플랫폼입니다.</p>
+        <span class="tag-line">자금만 보는 게 아니라, 회사 전체 구조를 봅니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">신차 플랫폼</div>
+        </div>
+        <h3>PICKCAR</h3>
+        <p>국산차·수입차 전차종 신차 판매, 장기렌터카, 리스, 할부를 비교해 제공하는 신차 종합 판매 플랫폼입니다.</p>
+        <span class="tag-line">같은 차라도, 가져오는 구조가 다르면 가격이 달라집니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">보험</div>
+        </div>
+        <h3>깐부다이렉트</h3>
+        <p>자동차 다이렉트 보험 중심의 플랫폼입니다. 복잡한 보험 비교를 더 단순하게 정리합니다.</p>
+        <span class="tag-line">복잡한 걸 쉽게 정리하는 방향입니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">통신</div>
+        </div>
+        <h3>깐부폰</h3>
+        <p>휴대폰 판매 및 창업 모델을 운영하는 브랜드입니다. 온라인 기반으로 확장 가능한 구조를 만듭니다.</p>
+        <span class="tag-line">고정비보다 구조가 중요합니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">렌탈</div>
+        </div>
+        <h3>깐부렌탈</h3>
+        <p>생활가전 렌탈 중심의 브랜드입니다. 정수기, 공기청정기, 비데 등 생활 필수 제품을 기반으로 운영합니다.</p>
+        <span class="tag-line">한 번 판매가 아니라 누적 구조를 봅니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">태양광</div>
+        </div>
+        <h3>한국태양광연금협회</h3>
+        <p>태양광을 장기 수익 구조로 연결하는 브랜드입니다. 지붕 활용과 장기 수익 모델에 초점을 맞춥니다.</p>
+        <span class="tag-line">설치가 아니라 구조를 봅니다.</span>
+      </div>
+
+      <div class="brand-card reveal">
+        <div class="brand-card-top">
+          <div class="brand-logo-slot">로고</div>
+          <div class="brand-badge">플랫폼</div>
+        </div>
+        <h3>한국부업인협회</h3>
+        <p>현실적인 부업·창업 기회를 연결하는 플랫폼 성격의 브랜드입니다.</p>
+        <span class="tag-line">뜨는 말보다, 실제 가능한 구조를 다룹니다.</span>
+      </div>
+    </div>
+  </div>
+</section>
